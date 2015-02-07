@@ -10,7 +10,7 @@ install:
 `npm install`
 
 run:
-`node server.js`
+`npm run start`
 
 view:
 `http://localhost:8080`
