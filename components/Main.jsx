@@ -82,17 +82,18 @@ var Carousel = React.createClass({
 
 var Category = React.createClass({
 	render: function() {
-	var categories = categoryMock.map(function(ctgry, idx){
-		return (
-			<div key={idx} >
-				<a className='category-name'>
-					<span className='category-name-text'>{ctgry.category}</span>
-					<span className='category-name-more'>看更多<span className='glyphicon glyphicon-menu-right category-name-more-icon'></span></span>
-				</a>
-				<Article article={ctgry.article} />
-			</div>
-		);
-	});
+		var categories = categoryMock.map(function(ctgry, idx){
+			return (
+				<div key={idx} >
+					<div className='category-name'>
+						<span className={ctgry.icon}></span>
+						<a className='category-name-text'>{ctgry.category}</a>
+						<a className='category-name-more'>看更多<span className='glyphicon glyphicon-menu-right category-name-more-icon'></span></a>
+					</div>
+					<Article article={ctgry.article} />
+				</div>
+			);
+		});
 	return (
 		<div id='category' className='col-sm-9 p-0'>
 			{categories}

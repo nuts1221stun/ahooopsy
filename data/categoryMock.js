@@ -1,7 +1,7 @@
 module.exports = [
 	{
 		category: 'a',
-		icon: '',
+		icon: 'glyphicon glyphicon-piggy-bank',
 		article: [
 			{
 				title: 'a-1',
@@ -21,7 +21,7 @@ module.exports = [
 	},
 	{
 		category: 'b',
-		icon: '',
+		icon: 'glyphicon glyphicon-alert',
 		article: [
 			{
 				title: 'b-1',
@@ -41,7 +41,7 @@ module.exports = [
 	},
 	{
 		category: 'c',
-		icon: '',
+		icon: 'glyphicon glyphicon-knight',
 		article: [
 			{
 				title: 'c-1',
