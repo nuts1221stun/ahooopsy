@@ -1,8 +1,15 @@
 body {
 	text-align: center;
 }
+a {
+	color: #000;
+	text-decoration: none;
+	display: block;
+}
 #main {
-	width:900px;
+	max-width:1000px;
+	min-width: 800px;
+	width: 90%;
 	margin: 0 auto;
 }
 .col-sm-3.p-0, .col-sm-6.p-0, .col-sm-9.p-0, .col-sm-12.p-0 {
@@ -16,31 +23,40 @@ body {
 #popular {
 	margin-bottom: 20px;
 } 
-#popular .left, #popular .right {
+.popular-title {
+	border-bottom: 1px #ccc solid;
+	margin-bottom: 10px;
+}
+.popular-left, .popular-right {
 	padding: 0;
 }
-#popular .left-image, #popular .right-image {
-	height: 300px;
+.popular-left-image, .popular-right-image {
+	height: 400px;
 }
-#popular .image {
+.popular-image {
 	height: 100%;
 	background-color: #ccc;		
 }
-#popular .right-top, #popular .right-bottom {
+.popular-image-wrap {
+	height: 100%;
+	width: 100%;	
+	overflow: hidden;
+}
+.popular-right-top, .popular-right-bottom {
 	height: 50%;
 }
-#popular .right-top {
+.popular-right-top {
 	padding-bottom: 5px;
 }
-#popular .right-bottom {
+.popular-right-bottom {
 	padding-top: 5px;
 }
-#popular .left {
-	padding-right: 10px;
+.popular-left {
+	padding-right: 10px !important;
 }
-#popular .title {
-	border-bottom: 1px #ccc solid;
-	margin-bottom: 10px;
+.carousel.slide, .carousel-inner {
+	height: 100%;
+	width: 100%;
 }
 #category {
 	padding-right: 10px;
@@ -48,36 +64,63 @@ body {
 	text-align: left;
 	font-size: 12px;
 }
-#category .categoryTitle {
+.category-name:first-child {
+	margin-top: 0;
+}
+.category-name {
 	border-bottom: 1px #ccc solid;
 	margin: 15px 0;
 	font-size: 18px;
+	vertical-align: middle;
 }
-#category .item {
+.category-name-text, .category-name-more {
+	display: inline-block;
+	height: 18px;
+}
+.category-name-more {
+	float: right;
+	font-size:12px;
+	padding: 3px 0;
+}
+.category-name-more-icon {
+	margin-left: 5px;
+}
+.category-item {
 	margin-bottom: 15px;
 }
-#category .image {
-	height: 100px;
+.category-item:last-child {
+	margin-bottom: 40px;
+}
+.category-image {
+	height: 120px;
 	background-color: #ccc;
 }
-#category .text {
-	padding-left: 10px;
+.category-text {
+	height: 120px;
+	padding-left: 10px !important;
 }
-#category .title {
+.category-title-wrapper {
+	height: 40%;
+}
+.category-summary {
+	height: 60%;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+  	line-height: 1.5;
+}
+.category-title {
 	font-size: 16px;
 }
-#category .view, #category .like {
+.category-view, .category-like {
 	margin-right: 10px;
 	color: #888;
 }
-#category .icon {
+.category-icon {
 	margin-right: 5px;
 }
-#category .summary {
-	margin-top: 10px;
-}
+
 #promotion {
-	height: 400px;
+	height: 600px;
 	background-color: #ccc;
 	margin-top: 20px;
 }

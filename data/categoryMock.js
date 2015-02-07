@@ -6,7 +6,7 @@ module.exports = [
 				title: 'a-1',
 				view: 120,
 				like: 58,
-				summary: 'a-1 text text text'
+				summary: 'a-1 text text text text text text text text text text text text text text text text text text text text text'
 			},
 			{
 				title: 'a-2',
