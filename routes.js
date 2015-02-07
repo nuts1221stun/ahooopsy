@@ -1,6 +1,7 @@
 var JSX = require('node-jsx').install(),
     React = require('react'),
-    Main = require('./components/Main.jsx');
+    Main = require('./components/Main.jsx'),
+    ArticlePage = require('./components/ArticlePage.jsx');
 
 module.exports = {
 
@@ -21,6 +22,14 @@ module.exports = {
 
   page: function(req, res) {
       res.send('');
+  },
+
+  article: function (req, res) {
+    var markup = React.renderComponentToString(ArticlePage({}));
+    res.render('article', {
+      markup: markup,
+      state: JSON.stringify({})
+    });
   }
 
 }
