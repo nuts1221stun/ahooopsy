@@ -2,6 +2,7 @@
 
 var React = require('react');
 var categoryMock = require('../data/categoryMock');
+var popularMock = require('../data/popularMock');
 var Header = require('./Header.jsx');
 var Promotion = require('./Promotion.jsx');
 
@@ -20,6 +21,7 @@ module.exports = Main = React.createClass({
 
 var Popular = React.createClass({
 	render: function() {
+		var thumbnails = popularMock.thumbnail;
 		return (
 			<div id='popular'>
 				<div className='popular-title'>熱門精選 SOP</div>
@@ -34,16 +36,16 @@ var Popular = React.createClass({
 					<div className='popular-right-image'>
 						<div className='popular-right-top'>
 							<div className='popular-image'>
-								<div className='popular-image-wrap'>
-									<img src='https://farm8.staticflickr.com/7298/16455061772_8a185a14ea_n.jpg' alt='a'/>
-								</div>
+								<a className='popular-image-wrap'>
+									<img src={thumbnails[0].image} alt={thumbnails[0].title}/>
+								</a>
 							</div>
 						</div>
 						<div className='popular-right-bottom'>
 							<div className='popular-image'>
-								<div className='popular-image-wrap'>
-									<img src='https://farm8.staticflickr.com/7293/16273529487_4e568dfc8e_n.jpg' alt='a'/>
-								</div>
+								<a className='popular-image-wrap'>
+									<img src={thumbnails[1].image} alt={thumbnails[1].title}/>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -54,6 +56,13 @@ var Popular = React.createClass({
 });
 var Carousel = React.createClass({
 	render: function() {
+		var items = popularMock.carousel.map(function(item, idx){
+			return (
+				<a className='item active' key={idx}>
+					<img className='img-responsive' src={item.image} alt={item.title} />
+				</a>
+			);
+		});
 		return (
 			<div className='carousel slide' data-ride='carousel'>
 				<ol className='carousel-indicators'>
@@ -64,18 +73,7 @@ var Carousel = React.createClass({
 				</ol>
 
 				<div className='carousel-inner' role='listbox'>
-					<div className='item active'>
-					  <img className='img-responsive' src='https://farm8.staticflickr.com/7395/16266928938_cc01ebda72_c.jpg' alt='a'/>
-					</div>
-
-					<div className='item'>
-					  <img className='img-responsive' src='https://farm8.staticflickr.com/7405/16454731571_bde46f4550_c.jpg' alt='b'/>
-					</div>
-
-					<div className='item'>
-					  <img className='img-responsive' src='https://farm8.staticflickr.com/7357/16457981625_377125619e_c.jpg' alt='c'/>
-					</div>
-
+					{items}
 				</div>
 			</div>
 		);
@@ -108,8 +106,9 @@ var Article = React.createClass({
 		var items = this.props.article.map(function(artc, idx){
 			return (
 				<div className='category-item col-sm-6 p-0' key={idx}>
-					<div className='category-image col-sm-6 p-0'>
-					</div>
+					<a className='category-image col-sm-6 p-0'>
+						<img src={artc.image} className='' />
+					</a>
 					<div className='category-text col-sm-6 p-0'>
 						<div className='category-title-wrapper'>
 							<div className='category-title'>{artc.title}</div>
