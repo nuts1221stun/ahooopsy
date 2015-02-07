@@ -89,7 +89,7 @@ var Category = React.createClass({
 			<div key={idx} >
 				<a className='category-name'>
 					<span className='category-name-text'>{ctgry.category}</span>
-					<span className='category-name-more'>看更多<span className='glyphicon glyphicon-chevron-right category-name-more-icon'></span></span>
+					<span className='category-name-more'>看更多<span className='glyphicon glyphicon-menu-right category-name-more-icon'></span></span>
 				</a>
 				<Article article={ctgry.article} />
 			</div>

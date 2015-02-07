@@ -1,10 +1,16 @@
 body {
 	text-align: center;
+	font-family: "HelveticaNeue", "STHeitiTC-Light", Helvetica, Arial, sans-serif;
 }
 a {
 	color: #000;
 	text-decoration: none;
 	display: block;
+	cursor: pointer;
+}
+a:hover {
+	color: #000;
+	text-decoration: none;
 }
 #main {
 	max-width:1000px;
@@ -15,10 +21,44 @@ a {
 .col-sm-3.p-0, .col-sm-6.p-0, .col-sm-9.p-0, .col-sm-12.p-0 {
 	padding: 0;
 }
+.clear {
+	clear: both;
+}
 #header {
-	height: 50px;
-	margin-bottom: 20px;
-	padding-top: 20px;
+	height: 40px;
+	margin: 20px 0 30px 0;
+}
+.header-logo {
+	font-size: 24px;
+	color: #400090;
+}
+.header-right {
+	height: 40px;
+}
+.header-search {
+	width: 200px;
+	font-size: 12px;
+	margin: 5px 15px 5px 0;
+	float: right;
+}
+.header-user {
+	float: right;
+	display: inline-block;
+}
+.header-user-avatar {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	margin-right: 6px;
+	vertical-align: top;
+}
+.header-user-avatar img{
+	width: 100%;
+	height: 100%;
+}
+.header-user-setting {
+	font-size: 12px;
+	padding: 14px 0;
 }
 #popular {
 	margin-bottom: 20px;
@@ -26,6 +66,8 @@ a {
 .popular-title {
 	border-bottom: 1px #ccc solid;
 	margin-bottom: 10px;
+	font-size: 20px;
+	color: #400090;
 }
 .popular-left, .popular-right {
 	padding: 0;
