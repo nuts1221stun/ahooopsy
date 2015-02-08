@@ -169,6 +169,7 @@ a:hover {
 }
 
 #promotion {
+	width: 100%;
 	margin-top: 20px;
 	text-align: left;
 }
@@ -200,4 +201,34 @@ a:hover {
 	margin-bottom: 30px;
 	overflow: hidden;
 	background-color: #ccc;
+}
+
+.article .article-banner {
+	width: 100%;
+	border-bottom-width: 2px;
+	border-bottom-color: #aaa;
+	border-bottom-style: solid;
+}
+
+.article .article-banner-left {
+	text-align: left;
+}
+.article .article-banner-left .big-class {
+	font-size: 20px;
+	display: inline-block;
+	margin-right: 10px;
+}
+.article .article-banner-left .small-class {
+	margin-left: 10px;
+	font-size: 15px;
+	line-height: 28px;
+	display: inline-block;
+}
+.article .article-banner-left .big-class-text {
+	padding-left: 10px;
+	display: inline-block;
+}
+.article .main-image-container {
+	width: 100%;
+	margin-top: 10px;
 }
