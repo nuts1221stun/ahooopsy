@@ -37,11 +37,11 @@ var ArticlePage = React.createClass({
     render: function () {
         return <div id="main">
                    <Header />
-                   <div className="col-sm-9 article">
+                   <div className="col-sm-9 p-0 article" id="article">
                        <ArticleBanner />
                        <ArticleMainImage />
                    </div>
-                   <div className="col-sm-3">
+                   <div className="col-sm-3 p-0">
                        <Promotion />
                    </div>
                </div>;

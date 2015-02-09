@@ -101,7 +101,7 @@ a:hover {
 	width: 100%;
 }
 #category {
-	padding-right: 10px;
+	padding-right: 40px;
 	margin-top: 20px;
 	text-align: left;
 	font-size: 12px;
@@ -202,7 +202,9 @@ a:hover {
 	overflow: hidden;
 	background-color: #ccc;
 }
-
+#article {
+	padding-right: 40px;
+}
 .article .article-banner {
 	width: 100%;
 	border-bottom-width: 2px;

@@ -12,8 +12,12 @@ module.exports = Main = React.createClass({
 			<div id='main'>
 				<Header />
 				<Popular />
-				<Category />
-				<Promotion />
+				<div className='col-sm-9 p-0'>
+					<Category />
+				</div>
+				<div className='col-sm-3 p-0'>
+					<Promotion />
+				</div>
 			</div>
 	    )
 	}
@@ -95,7 +99,7 @@ var Category = React.createClass({
 			);
 		});
 	return (
-		<div id='category' className='col-sm-9 p-0'>
+		<div id='category'>
 			{categories}
 		</div>
 	);
