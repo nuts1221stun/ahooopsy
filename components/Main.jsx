@@ -40,16 +40,16 @@ var Popular = React.createClass({
 					<div className='popular-right-image'>
 						<div className='popular-right-top'>
 							<div className='popular-image'>
-								<a className='popular-image-wrap'>
+								<div className='popular-image-wrap'>
 									<img src={thumbnails[0].image} alt={thumbnails[0].title}/>
-								</a>
+								</div>
 							</div>
 						</div>
 						<div className='popular-right-bottom'>
 							<div className='popular-image'>
-								<a className='popular-image-wrap'>
+								<div className='popular-image-wrap'>
 									<img src={thumbnails[1].image} alt={thumbnails[1].title}/>
-								</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -61,10 +61,14 @@ var Popular = React.createClass({
 var Carousel = React.createClass({
 	render: function() {
 		var items = popularMock.carousel.map(function(item, idx){
+			var className = 'item ';
+			if (idx === 0) {
+				className += 'active';
+			}
 			return (
-				<a className='item active' key={idx}>
+				<div className={className} key={idx}>
 					<img className='img-responsive' src={item.image} alt={item.title} />
-				</a>
+				</div>
 			);
 		});
 		return (
