@@ -17,10 +17,26 @@ var ArticleBannerLeft = React.createClass({
     }
 });
 
+var ArticleBannerRight = React.createClass({
+    render: function () {
+        return <div className="article-banner-right">
+                   <div className="left-thumb">
+                       <span className="glyphicon glyphicon-thumbs-up"></span>
+                       <span>419</span>
+                   </div>
+                   <div className="right-thumb">
+                       <span className="glyphicon glyphicon-thumbs-down"></span>
+                       <span>3</span>
+                   </div>
+               </div>;
+    }
+});
+
 var ArticleBanner = React.createClass({
     render: function () {
         return <div className="article-banner">
                    <ArticleBannerLeft />
+                   <ArticleBannerRight />
                </div>;
     }
 });

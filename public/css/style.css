@@ -210,6 +210,7 @@ a:hover {
 	border-bottom-width: 2px;
 	border-bottom-color: #aaa;
 	border-bottom-style: solid;
+	position: relative;
 }
 
 .article .article-banner-left {
@@ -233,4 +234,20 @@ a:hover {
 .article .main-image-container {
 	width: 100%;
 	margin-top: 10px;
+}
+.article-banner-right {
+	position: absolute;
+	right: 0;
+	top: 5px;
+}
+.article-banner-right .left-thumb {
+	color: green;
+	margin-right: 10px;
+	display: inline-block;
+}
+.article-banner-right .glyphicon {
+	margin-right: 5px;
+}
+.article-banner-right .right-thumb {
+	display: inline-block;
 }
