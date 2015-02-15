@@ -49,6 +49,23 @@ var ArticleMainImage = React.createClass({
     }
 });
 
+var TagBlock = React.createClass({
+    render: function () {
+        return <div className="tag-block">
+                   <div className="tag-entry">台北市交通大隊</div>
+                   <div className="tag-entry">車禍</div>
+               </div>;
+    }
+});
+
+var ArticleMainContainer = React.createClass({
+    render: function () {
+        return <div className="article-main-container">
+                   <TagBlock />
+               </div>;
+    }
+});
+
 var ArticlePage = React.createClass({
     render: function () {
         return <div id="main">
@@ -56,6 +73,7 @@ var ArticlePage = React.createClass({
                    <div className="col-sm-9 p-0 article" id="article">
                        <ArticleBanner />
                        <ArticleMainImage />
+                       <ArticleMainContainer />
                    </div>
                    <div className="col-sm-3 p-0">
                        <Promotion />
