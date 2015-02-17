@@ -2,6 +2,7 @@
 
 var React = require('react');
 var Header = require('./Header.jsx');
+var Comments = require('./Comments.jsx');
 var Promotion = require('./Promotion.jsx');
 
 var ArticleBannerLeft = React.createClass({
