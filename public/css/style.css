@@ -101,7 +101,7 @@ a:hover {
 	width: 100%;
 }
 #category {
-	padding-right: 10px;
+	padding-right: 40px;
 	margin-top: 20px;
 	text-align: left;
 	font-size: 12px;
@@ -169,6 +169,7 @@ a:hover {
 }
 
 #promotion {
+	width: 100%;
 	margin-top: 20px;
 	text-align: left;
 }
@@ -200,4 +201,71 @@ a:hover {
 	margin-bottom: 30px;
 	overflow: hidden;
 	background-color: #ccc;
+}
+#article {
+	padding-right: 40px;
+}
+.article .article-banner {
+	width: 100%;
+	border-bottom-width: 2px;
+	border-bottom-color: #aaa;
+	border-bottom-style: solid;
+	position: relative;
+}
+
+.article .article-banner-left {
+	text-align: left;
+}
+.article .article-banner-left .big-class {
+	font-size: 20px;
+	display: inline-block;
+	margin-right: 10px;
+}
+.article .article-banner-left .small-class {
+	margin-left: 10px;
+	font-size: 15px;
+	line-height: 28px;
+	display: inline-block;
+}
+.article .article-banner-left .big-class-text {
+	padding-left: 10px;
+	display: inline-block;
+}
+.article .main-image-container {
+	width: 100%;
+	margin-top: 10px;
+}
+.article-banner-right {
+	position: absolute;
+	right: 0;
+	top: 5px;
+}
+.article-banner-right .left-thumb {
+	color: green;
+	margin-right: 10px;
+	display: inline-block;
+}
+.article-banner-right .glyphicon {
+	margin-right: 5px;
+}
+.article-banner-right .right-thumb {
+	display: inline-block;
+}
+.article-main-container {
+	width: 100%;
+	position: relative;
+	padding: 5px;
+}
+.article .tag-block {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+.article .tag-entry {
+	display: inline-block;
+	padding: 4px 6px;
+	margin-right: 3px;
+	background-color: #0088ff;
+	color: #fff;
+	border-radius: 4px;
 }
